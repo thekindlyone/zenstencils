@@ -1,0 +1,5 @@
+Zenstencils
+
+Downloads popular webcomic zenpencils to view locally
+http://zenpencils.com/
+Run the python script and it will download the images. then open the zenstencils.html file in webbrowser.

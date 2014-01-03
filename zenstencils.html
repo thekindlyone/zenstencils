@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>zenstencils</title>
+<script src="jquery-1.10.1.min.js"></script>
+<script>
+var strips = new Array("2012-01-30-1-ralph-waldo-emerson-make-them-cry.gif","2012-01-31-2-helen-keller-on-friendship.gif","2012-02-01-3-unknown-always-be-prepared.gif","2012-02-02-4-robert-frost-the-faithful-worker.gif","2012-02-03-CONFUCIUS-find-a-job-you-love.gif","2012-02-04-BENJAMIN-FRANKLIN-don%27t-get-trapped.gif","2012-02-05-ALBERT-EINSTEIN-everybody-is-a-genius.png","2012-02-06-THEODORE-ROOSEVELT-the-man-in-the-arena.gif","2012-02-08-MARK-TWAIN-no-regrets.gif","2012-02-10-WILLIAM-ERNEST-HENLEY-invictus.jpg","2012-02-13-GEORGE-PATTON-a-man-must-know-his-destiny.gif","2012-02-15-CARL-SAGAN-make-the-most-of-this-life.gif","2012-02-17-the-DALAI-LAMA-answers-a-question.png","2012-02-20-HUNTER-S-THOMPSON-buy-the-ticket.png","2012-02-22-GANDHI-the-right-state-of-mind.png","2012-02-24-STEVE-JOBS-your-time-is-limited.png","2012-02-27-FRANK-HERBERT-litany-against-fear.jpg","2012-02-29-LAO-TZU-watering-your-dreams.png","2012-03-02-DR-SEUSS-you-know-youre-in-love.gif","2012-03-05-ROBERT-FROST-the-brain-is-a-wonderful-organ.png","2012-03-07-RUDYARD-KIPLING-if.jpg","2012-03-09-AUDREY-HEPBURN-sex-appeal.png","2012-03-12-GEORGE-CARLIN-on-religious-hats.png","2012-03-14-GEORGE-CARLIN-on-assassination.png","2012-03-16-GEORGE-CARLIN-on-bullshit.jpg","2012-03-19.png","2012-03-21-KURT-VONNEGUT.jpg","2012-03-23-PLATO.jpg","2012-03-26-AUNG.jpg","2012-03-28-KARNAZES.jpg","2012-03-30-hicks.jpg","2012-04-02-maria.jpg","2012-04-04-edgar-mitchell.jpg","2012-04-06-sydney-smith.jpg","2012-04-09-bruce-lee-1.jpg","2012-04-11-bruce-lee-2.jpg","2012-04-13-bruce-lee-water.jpg","2012-04-17-petit.jpg","2012-04-19-worry.jpg","2012-04-24-coolidge.jpg","2012-04-26-rand.jpg","2012-05-01-tyson.jpg","2012-05-03-hunter2.jpg","2012-05-08-buddha.jpg","2012-05-15-whitmannew.jpg","2012-05-17-cassiusclay.jpg","2012-05-18-ali.jpg","2012-05-22-aliforeman.jpg","2012-05-24-vonnegut.jpg","2012-05-29-gaiman.jpg","2012-05-31-einstein.jpg","2012-06-05-philplait.jpg","2012-06-07-robertfulgham.jpg","2012-06-12-bradbury.jpg","2012-06-14-bodhidharma.jpg","2012-06-19-henryrollins.jpg","2012-06-21-edmundhillary.jpg","2012-06-26-livewell.jpg","2012-06-28-shel.jpg","2012-07-03-road.jpg","2012-07-05-trapeze.jpg","2012-07-10-douglasadams.jpg","2012-07-12-books.jpg","2012-07-17-goddard.jpg","2012-07-19-deepestfear.jpg","2012-07-24-feynman.jpg","2012-07-26-feynman2.jpg","2012-07-31-owens.jpg","2012-08-02-happiness.jpg","2012-08-07-wild.jpg","2012-08-10-monk2.jpg","2012-08-14-dragons2.jpg","2012-08-16-edge.jpg","2012-08-21-travel.jpg","2012-08-23-barkernew.jpg","2012-08-28-cooking.jpg","2012-08-30-armstrong.jpg","2012-09-04-einstein.jpg","2012-09-07-mywage.jpg","2012-09-11-door.jpg","2012-09-14-THOREAU.jpg","2012-09-18-dawkins.jpg","2012-09-21-zen.jpg","2012-09-25-wrestling.jpg","2012-09-27-fishing.jpg","2012-10-02-lawrence.jpg","2012-10-05-brickwalls.jpg","2012-10-09-beckett.jpg","2012-10-16-astronomer.jpg","2012-10-23-fry.jpg","2012-10-30-iraglass.jpg","2012-11-06-billhicks.jpg","2012-11-13-chrisg.jpg","2012-11-20-corner.jpg","2012-11-27-twowolvesnew.jpg","2012-12-04-louieck.jpg","2012-12-13-mindmatter.jpg","2012-12-18-bukowski.jpg","2013-01-08-alanwatts.jpg","2013-01-15-emilydickinson.jpg","2013-01-21-sagan.jpg","2013-01-29-churchill.jpg","2013-02-05-leary.jpg","2013-02-12-lewis.jpg","2013-02-19-malala.jpg","2013-02-26-saintexupery.jpg","2013-03-05-hadfield.jpg","2013-03-12-seneca.jpg","2013-03-19-scholl.jpg","2013-03-26-river.jpg","2013-04-01-yoda.jpg","2013-04-09-jacklondon.jpg","2013-04-16-windsoffate.jpg","2013-04-23-vangogh.jpg","2013-04-30-playingthegame.jpg","2013-05-07.jpg","2013-05-21-caitlinmoran.jpg","2013-05-28-belltolls.jpg","2013-06-04-ebert.jpg","2013-06-11-johngreen.jpg","2013-06-18-mckenna.jpg","2013-07-03-frank.jpg","2013-07-09-rollthedice.jpg","2013-07-16-ericagoldson.jpg","2013-07-23-teachersNEW.jpg","2013-07-30-curieNEW.jpg","2013-08-06-shakespeare2.jpg","2013-08-14-rowling.jpg","2013-08-27-watterson.jpg","2013-09-05-maron.jpg","2013-09-12-plath.jpg","2013-09-25-ithaka01.jpg","2013-10-02-krishnamurti.jpg");
+var titles=new Array("1. RALPH WALDO EMERSON: Make them cry","2. HELEN KELLER: On friendship","3. SHAOLIN MONK: Always be prepared","4. ROBERT FROST: The faithful worker","5. CONFUCIUS: Find a job you love","6. BENJAMIN FRANKLIN: Don't get trapped","7. ALBERT EINSTEIN: Everybody is a genius","8. THEODORE ROOSEVELT: The Man in the Arena","9. MARK TWAIN: No regrets","10. WILLIAM ERNEST HENLEY: Invictus","11. GEORGE PATTON: A man must know his destiny","12. CARL SAGAN: Make the most of this life","13: The DALAI LAMA answers a question","14. HUNTER S. THOMPSON: Buy the ticket","15. GANDHI: The right state of mind","16. STEVE JOBS: Your time is limited","17. FRANK HERBERT: Litany against fear","18. LAO TZU: Watering your dreams","19. DR SEUSS: You know you're in love","20. ROBERT FROST: The brain is a wonderful organ","21. RUDYARD KIPLING: If","22. AUDREY HEPBURN: Sex appeal","23: GEORGE CARLIN: On religious hats (EXPLICIT)","24. GEORGE CARLIN: On assassination (EXPLICIT)","25. GEORGE CARLIN: On bullshit (EXPLICIT)","26. GEORGE CARLIN: On technology (EXPLICIT)","27. KURT VONNEGUT: Take a moment","28: PLATO: On music","29. AUNG SAN SUU KYI: Freedom from fear","30. DEAN KARNAZES: There's no struggle in our lives","31. BILL HICKS: A positive LSD story","32. RAINER MARIA RILKE: Letter to a young poet","33. EDGAR MITCHELL: A global consciousness","34. SYDNEY SMITH: Do what you can","35. BRUCE LEE: Absorb what is useful","36. BRUCE LEE: There are no limits","37. BRUCE LEE: Be water, my friend","38. PHILIPPE PETIT: Impossible is possible","39. SHANTIDEVA: What, me worry?","40. CALVIN COOLIDGE: Never give up","41. AYN RAND: The question","42. NEIL deGRASSE TYSON: The most astounding fact","43. HUNTER S. THOMPSON: The happier man","44. BUDDHA: Pay it forward","45. WALT WHITMAN: O me! O Life!","46. MUHAMMAD ALI: The legend of Cassius Clay","47. MUHAMMAD ALI: I know the truth","48. MUHAMMAD ALI: A true champion","49. KURT VONNEGUT: The life of art","50. NEIL GAIMAN: Make good art","51. ALBERT EINSTEIN: The important thing","52. PHIL PLAIT: Welcome to science","53. ROBERT FULGHUM: Inconvenience or problem?","54. RAY BRADBURY: Jump!","55. BODHIDHARMA: The road to freedom","56. HENRY ROLLINS: Who's the crazier man?","57. EDMUND HILLARY: An ordinary chap","58: Living well is the best revenge","59. SHEL SILVERSTEIN: The Woulda-Coulda-Shouldas","60. ROBERT FROST: The road not taken","61: An act of boldness","62. DOUGLAS ADAMS: A good time to be alive","63. CARL SAGAN: Books are awesome","64. ROBERT H. GODDARD: The rocket man","65. MARIANNE WILLIAMSON: Our deepest fear","66. RICHARD FEYNMAN: A more interesting outlook","67. RICHARD FEYNMAN: The universe in a glass","68. JESSE OWENS: The inevitable battle","69. BUDDHA: Less is more","70. CHRISTOPHER McCANDLESS: Into the wild","SPECIAL: The Shaolin Monk experience!","71: OSWALD CHAMBERS: Mountains and valleys","72: CHRISTOPHER LOGUE: Come to the edge","73. MARK TWAIN: An educational journey","74. CLIVE BARKER: Fearful things","75. L.P. JACKS: Work and play","76. NEIL ARMSTRONG: A giant among men","77. ALBERT EINSTEIN: A human being is part of a whole","78. JESSIE B. RITTENHOUSE: My Wage","79. HELEN KELLER: When one door closes","80. HENRY DAVID THOREAU: On happiness","81. RICHARD DAWKINS: The lucky ones","82. ZEN PROVERB: The master","83. HOWARD THURMAN: Ask yourself","84. CHINESE PROVERB: Give a man a fish","85. LAWRENCE OF ARABIA: All men dream","86. RANDY PAUSCH: The brick walls","87. SAMUEL BECKETT: Ever tried. Ever failed.","88. WALT WHITMAN: When I heard the learn'd astronomer","89. STEPHEN FRY: Ultimate self-help book","90: IRA GLASS: Advice for beginners","91. BILL HICKS: It's just a ride","92. CHRIS GUILLEBEAU: 11 ways to be average","93. CHARLES HANSON TOWNE: Around the corner","94. The Two Wolves","95: LOUIS C.K: We don't think about how we talk","96. DR. SEUSS: Those who mind, don't matter","97. CHARLES BUKOWSKI: Air and light and time and space","98. ALAN WATTS: What if money was no object?","99. EMILY DICKINSON: A bird came down the walk","100. CARL SAGAN: Pale blue dot","101. WINSTON CHURCHILL: Never yield to force","102. TIMOTHY LEARY: You aren't like them","103. C.S. LEWIS: To love at all","104. MALALA YOUSAFZAI: I have the right","105. ANTOINE de SAINT-EXUPERY: If you want to build a ship","106. CHRIS HADFIELD: An astronaut's advice","107. SENECA: Sympathy for the Devil","108. SOPHIE SCHOLL: The fire within","109. ZEN FABLE: The river crossing","110. YODA: Do or do not","111. JACK LONDON: I would rather be ashes than dust","112. ELLA WHEELER WILCOX: The Winds of Fate","113. VINCENT VAN GOGH: In spite of everything","114. Playing the game","115. M-O-T-H-E-R","116. CAITLIN MORAN: We're all dying","117. JOHN DONNE: For Whom the Bell Tolls","118. ROGER EBERT: On kindness","119. JOHN GREEN: Make gifts for people","120. TERENCE McKENNA: Nature loves courage","121. ANNE FRANK: It's difficult in times like these","122. CHARLES BUKOWSKI: Roll the dice","123. ERICA GOLDSON: Graduation speech","124. TAYLOR MALI: What Teachers Make","125. MARIE CURIE: Life is not easy","126. SHAKESPEARE: A love story in four parts","127. J.K. ROWLING: The fringe benefits of failure","128. BILL WATTERSON: A cartoonist's advice","129. MARC MARON: The social media generation","130. SYLVIA PLATH: The fig tree","131. C.P. CAVAFY: Ithaka","132. JIDDU KRISHNAMURTI: Don't compare yourself to others");
+var curr=1;
+$(document).ready(function(){
+$('#next').click(function(){
+    if(curr<strips.length){
+    strip=strips[curr+1];
+    hypertext='<img src='+'"'+strip+'"></img>';    
+    $('#comic').html(hypertext);
+    title=titles[curr+1];
+    ttext='<h2>'+title+'</h2>';
+    $('#title').html(ttext);
+    curr=curr+1;
+    }
+    });
+$('#prev').click(function(){
+    if (curr>=1){
+    strip=strips[curr-1];
+    title=titles[curr-1];
+    hypertext='<img src='+'"'+strip+'"></img>';    
+    $('#comic').html(hypertext);
+    ttext='<h2>'+title+'</h2>';
+    $('#title').html(ttext);
+    curr=curr-1;
+    }
+    });
+});
+</script>
+</head>
+<style>
+    body {
+	margin:50px 0px; padding:0px;
+	text-align:center;
+    background-color:#eee;
+	}
+#prev{
+    float:left;
+margin:10px 0px; padding:0px;
+}
+#next{
+float:right;
+margin:10px 0px; padding:0px
+}
+</style>
+
+<body>
+    <div id="title"><h2>1. RALPH WALDO EMERSON: Make them cry<h2></div>
+<div id="navbar">
+<button align="left" id="prev" type="image"> <img src="back.png"></button>
+
+<button align="right" id="next" type="image"> <img src="next.png"></button>
+</div>
+<div id="comic"><img src="2012-01-30-1-ralph-waldo-emerson-make-them-cry.gif"></img></div>
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
